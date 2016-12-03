@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+inputer=${1};
+
+nameA="/media/kenshin/datasheet/gits/flask/self4FlaskLogin/"
+nameB="/media/kenshin/datasheet/gits/flask/7startOfBlog/flasky-8h/"
+
+totalA="$nameA$inputer"
+totalB="$nameB$inputer"
+
+dolphin --split $totalA $totalB

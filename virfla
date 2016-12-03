@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /media/kenshin/linuxData/dependency/fla/bin/activate;
+
+python /media/kenshin/linuxData/datasheet/youngmee/ym3_finalBK/1/hello.py runserver;

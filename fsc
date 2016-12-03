@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+dolphin --split "/usr/games" "/media/kenshin/新加卷/ubuntuStudy/0_steps/linuxShortCut/" 

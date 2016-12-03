@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#read line by line
+#change string 
+#finally mv to rename
+#a typical use of it is:
+#    ls | grep vtt | bashRemame
+
+
+while read line
+do
+tempString=${line/vtt/srt}
+mv $line $tempString
+done 

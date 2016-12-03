@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dolphin "/media/kenshin/新加卷/1T_newD/0e_edxs/6.041/" | firefox "https://courses.edx.org/courses/course-v1:MITx+6.041x_3+2T2016/courseware/Unit_1_Probability_models_and_axioms/Solved_problems/"
+ 

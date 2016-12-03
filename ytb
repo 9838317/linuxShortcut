@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dolphin "/media/kenshin/新加卷/1T_newD/0a_计算机相关书籍/useful python code/好程序集合/python/youtubeSrtDownloader" |idle "/media/kenshin/新加卷/1T_newD/0a_计算机相关书籍/useful python code/好程序集合/python/youtubeSrtDownloader/youtube.py"
+
+

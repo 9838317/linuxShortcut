@@ -1,0 +1,13 @@
+#!/bin/sh
+
+name=$1;
+fileName=$name.java;
+
+echo $name;
+echo $fileName
+
+javac $fileName;
+java $name > $name;
+subl $name;
+
+

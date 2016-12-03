@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm -r /usr/games/*
+
+cp -r "/media/kenshin/新加卷/ubuntuStudy/0_steps/linuxShortCut/${1}"* /usr/games 
+
+chmod 777 /usr/games/*

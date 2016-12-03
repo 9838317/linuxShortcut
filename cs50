@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dolphin "/media/kenshin/新加卷/1T_newD/0e_edxs/harvardCs50/" | firefox "https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/f80f3f97621e42cfbaf3100e8f198ed0/9656f5a26e884fceb249b139b7711824/"
+
+ 

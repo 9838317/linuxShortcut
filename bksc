@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -f "/media/kenshin/新加卷/ubuntu study/0_steps/linuxShortCut/${1}"*;
+cp -r "/usr/games/." "/media/kenshin/新加卷/ubuntu study/0_steps/linuxShortCut/";
+sync;
