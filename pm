@@ -11,6 +11,16 @@ if [ -z "${var+nameB}" ]; then
 total="$nameA $nameB";
 fi
 
+if [ "$nameA" == "c" ]
+then
+  total="createsuperuser"
+fi
+
+if [ "$nameA" == "m" ]
+then
+  total="migrate"
+fi
+
 if [ "$nameA" == "r" ]
 then
   total="runserver"

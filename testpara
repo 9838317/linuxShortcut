@@ -1,0 +1,11 @@
+#!/bin/bash
+
+name=$1;
+
+tempString=${name/.java/}
+
+fileName=$tempString.java;
+
+echo $tempString;
+
+

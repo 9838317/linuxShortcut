@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [  -f pytxt ]; then
+    rm pytxt;
+fi
+
+if [  -f pycompile ]; then
+    rm pycompile;
+fi
+
+name=$1;
+
+withoutJava=${name/.py/}
+
+
+
+fileName=$withoutJava.py;
+
+echo $name
+echo $fileName;
+
+
+
+
+#umcomment folowwing to get simple compiling.
+#javac $fileName 2> javacompile;
+
+#following is to with self defined class path.
+python $fileName 2> pycompile;
+python $fileName > pytxt;
+
+
+
+
+
+
+
+

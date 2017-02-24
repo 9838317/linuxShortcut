@@ -1,13 +1,23 @@
-#!/bin/sh
+#!/bin/bash
 
 name=$1;
-fileName=$name.java;
 
-echo $name;
-echo $fileName
+withoutJava=${name/.java/}
 
-javac $fileName;
-java $name > $name;
-subl $name;
+fileName=$withoutJava.java;
+
+echo $name
+echo $fileName;
+
+#umcomment folowwing to get simple compiling.
+#javac $fileName;
+
+#following is to with self defined class path.
+javac $fileName -classpath /media/kenshin/linuxData/datasheet/gits/javalib/;
+
+
+java $withoutJava > javatxt;
+subl javatxt;
+rm $withoutJava.class;
 
 

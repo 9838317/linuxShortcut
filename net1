@@ -1,3 +1,29 @@
-#!/bin/sh
+#!/bin/bash 
+#pipe runs concurrently. So if you want to run the command sequentially, use ";"
 
-chromium 127.0.0.1:5000
+nameA=${1};
+
+if [ "$nameA" == "f" ]
+then
+  total="127.0.0.1:5000"
+fi
+
+if [ "$nameA" == "d" ]
+then
+  total="127.0.0.1:8000"
+fi
+
+if [ "$nameA" == "db" ]
+then
+  total="127.0.0.1:8000/blog"
+fi
+
+if [ "$nameA" == "da" ]
+then
+  total="127.0.0.1:8000/admin"
+fi
+
+
+echo $total
+
+chromium $total;

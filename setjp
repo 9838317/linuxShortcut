@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export CLASSPATH=.:/media/kenshin/linuxData/datasheet/gits/javalib/cls
+
+

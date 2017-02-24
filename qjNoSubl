@@ -1,0 +1,46 @@
+#!/bin/bash
+
+if [  -f javatxt ]; then
+    rm javatxt;
+fi
+
+if [  -f javacompile ]; then
+    rm javacompile;
+fi
+
+
+name=$1;
+
+withoutJava=${name/.java/}
+
+if [  -f $withoutJava.class ]; then
+    rm javacompile;
+fi
+
+fileName=$withoutJava.java;
+
+echo $name
+echo $fileName;
+
+
+
+
+#umcomment folowwing to get simple compiling.
+#javac $fileName 2> javacompile;
+
+#following is to with self defined class path.
+. epjava;
+javac $fileName -cp algs4.jar 2> javacompile;
+
+if [  -f $withoutJava.class ]; then
+    java  $withoutJava > javatxt;
+    rm $withoutJava.class;
+fi
+
+
+
+
+
+
+
+

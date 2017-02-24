@@ -1,0 +1,9 @@
+#!/bin/sh
+
+kstart --desktop 2 okular /media/kenshin/新加卷/1T_newD/0e_edxs/coursea_prin_algorithm_I/C.pdf;
+
+kstart --desktop 4 okular /media/kenshin/新加卷/1T_newD/0e_edxs/coursea_prin_algorithm_I/E.pdf;
+
+kstart --desktop 6 dolphin "/media/kenshin/新加卷/1T_newD/0e_edxs/coursea_prin_algorithm_I/"
+
+

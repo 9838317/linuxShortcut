@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dolphin "/media/kenshin/新加卷/1T_newD/0e_edxs/washington/" | firefox 'https://www.coursera.org/learn/ml-regression/home/week/2'
