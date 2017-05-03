@@ -1,0 +1,24 @@
+#!/bin/bash
+
+name1=$1;
+name2=$2;
+name3=$3;
+
+echo $name1 $name2 $name3;
+
+if [ $name3 ]; then
+    tree $name1 $name2 $name3;
+elif [ $name2  ]; then
+    tree $name1 $name2;
+elif [  $name1  ]; then
+    tree $name1 -L 1;
+else 
+    tree -L 1;
+fi
+
+
+
+
+
+
+

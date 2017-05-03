@@ -1,4 +1,0 @@
-#!/bin/sh
-
-dolphin "/media/kenshin/新加卷/1T_newD/0e_edxs/1803/" | firefox "https://courses.edx.org/courses/course-v1:MITx+18.031x+1T2017/courseware/unit2/recitation5_for_edx/"
- 

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-. /media/kenshin/linuxData/dependency/django186/bin/activate
-
-

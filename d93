@@ -1,5 +1,0 @@
-#!/bin/sh
-
-. /home/kenshin/dependency/django193/bin/activate
-
-

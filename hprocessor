@@ -1,0 +1,43 @@
+#!/usr/bin/python
+
+
+# This file can be modified to automatically generates .h c header file.
+# usage: ./hprocessor sample.c
+
+
+
+import sys
+
+print sys.argv[0]
+print sys.argv[1]
+
+withoutC = sys.argv[1].split('.')[0]
+
+fileName = withoutC + ".c"
+
+print withoutC
+print fileName
+
+fsRead  = open(fileName, "r")
+fsWrite = open(withoutC + '.h', 'w') 
+
+lines = fsRead.readlines()
+
+for i in lines:
+    if i[0] == 'i':
+        if i[1] == "n":
+            print i
+            fsWrite.write(i.rstrip())
+            fsWrite.write(';\n')
+    if i[0] == 'v':
+        if i[1] == "o":
+            print i
+            fsWrite.write(i.rstrip())        
+            fsWrite.write(';\n')
+
+fsRead.close()
+fsWrite.close()
+
+
+
+

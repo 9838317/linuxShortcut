@@ -1,9 +1,0 @@
-#!/bin/sh
-
-name=$1;
-fileName=$name.hs;
-ghc $fileName -o $name;
-./$name;
-
-
-

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ifconfig eth0 up;
+pon dsl-provider;
+plog;
+
+
+

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf "/home/kenshin/.config/sublime-text-3/Packages/${1}"*
+cp -r "/media/kenshin/新加卷/1T_newD/0a_计算机相关书籍/useful python code/好程序集合/python/sublime/django/" "/home/kenshin/.config/sublime-text-3/Packages/"
+ 

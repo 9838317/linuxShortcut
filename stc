@@ -9,27 +9,34 @@ if [  -f ccompile ]; then
     rm ccompile;
 fi
 
+if [  -f a.out ]; then
+    rm a.out;
+fi
+
 #get the fileName Without .c
 name=$1;
 
 withoutc=${name/.c/}
-echo $withoutc;
-if [  -f a.out ]; then
-    rm a.out;
-fi
+
+
+
 
 
 
 fileName=$withoutc.c;
 
-echo $name
-echo $fileName;
+echo compiling $withoutc;
+gcc $fileName  2>ccompile;
 
 
+if [  -f ccompile ]; then
+    cat ccompile;
+fi
 
-clang $fileName -o $withoutc 2>ccompile;
-./$withoutc > ctxt;
- 
+if [  -f a.out ]; then
+    ./a.out;
+fi
+
 
 
 

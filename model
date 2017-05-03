@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+import os
+
+fileName = os.getcwd().split('/')[-1] + '.tex'
+print (fileName)
+
+os.popen("cp /media/kenshin/新加卷/texs/modelB.tex %s"%fileName)

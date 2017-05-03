@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#get the fileName Without .c
+name=$1;
+withoutc=${name/.c/}
+echo $withoutc;
+
+fileName=$withoutc.c;
+
+echo $name
+echo $fileName;
+
+
+gcc -c $fileName -o $withoutc.o;
+ar rcs lib$withoutc.a $withoutc.o;
+
+chmod 777 lib$withoutc.a;
+chmod 777 $withoutc.h;
+
+chmod 777 /usr/local/lib;
+chmod 777 /usr/local/include;
+
+cp lib$withoutc.a /usr/local/lib;
+cp $withoutc.h /usr/local/include;
+
+
+

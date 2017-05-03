@@ -1,0 +1,12 @@
+#!/bin/bash
+# This is to change the brightness of the secondary monitor.
+# usage: % float n;   (0.1 <= n <= 1)
+
+name=$1;
+echo $name;
+
+xrandr --output HDMI1  --brightness $name;
+xrandr --output HDMI-1 --brightness $name;
+
+
+

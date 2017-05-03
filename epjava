@@ -1,4 +1,0 @@
-#!/bin/sh
-
-export CLASSPATH=.:algs4.jar
- 
