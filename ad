@@ -1,6 +1,0 @@
-#!/bin/sh
-
-apt-get dist-upgrade
-
-
-
