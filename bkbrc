@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# There is a function called ve to active a source, which is defined in .bashrc.
+
+# https://stackoverflow.com/questions/20391943/how-to-activate-python-virtual-environment-by-shell-script
+
+cp ~/.bashrc /media/kenshin/SHAREDISK/gitsFolder/linuxShortcut/
+
+
+
